@@ -2,17 +2,18 @@ import React from 'react'
 import './Home.css'
 
 // Home specific components
-import Linkedin from '../../components/personal/Linkedin'
-import Traits from '../../components/personal/Traits'
-import OldLogo from '../../components/personal/OldLogo'
-import Skills from '../../components/personal/Skills'
-import Profile from '../../components/personal/Profile'
-import Tech from '../../components/personal/Tech'
-import Github from '../../components/personal/Github'
-import Dla from '../../components/personal/Dla'
-import Testimonials from '../../components/personal/Testimonials'
-import ContactCall from '../../components/personal/ContactCall'
-import Socials from '../../components/personal/Socials'
+import LinkedIn from '../components/new/LinkedIn'
+import Traits from '../components/new/Traits'
+import Portfolio from '../components/new/Portfolio'
+
+import Skills from '../components/Skills'
+import Profile from '../components/Profile'
+import Tech from '../components/Tech'
+import Github from '../components/Github'
+import Dla from '../components/Dla'
+import Testimonials from '../components/Testimonials'
+import ContactCall from '../components/ContactCall'
+import Socials from '../components/Socials'
 
 class Home extends React.Component {
 
@@ -28,9 +29,13 @@ class Home extends React.Component {
                 <div style={{ height: '78px' }}></div>
 
                 <main>
-                    <Linkedin />
+                    {/* <Linkedin /> */}
+
+                    {/* test */}
+                    <LinkedIn />
                     <Traits />
-                    <OldLogo />
+                    <Portfolio />
+
                     <Skills />
                     <Profile />
                     <Tech />

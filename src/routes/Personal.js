@@ -6,16 +6,16 @@ import {
 } from 'react-router-dom'
 
 // Components
-import Navbar from '../components/personal/Navbar'
-import Footer from '../components/personal/Footer'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 // Routes
-import Home from '../pages/personal/Home'
-import Portfolio from '../pages/personal/Portfolio'
-import Minecraft from '../pages/personal/Minecraft'
-import Contact from '../pages/personal/Contact'
+import Home from '../pages/Home'
+import Portfolio from '../pages/Portfolio'
+import Minecraft from '../pages/Plugins'
+import Contact from '../pages/Contact'
 
-import NoMatch from '../pages/personal/NoMatch'
+import NoMatch from '../pages/NoMatch'
 
 const Personal = (props) => (
     <div>

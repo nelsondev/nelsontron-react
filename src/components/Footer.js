@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Footer = () => (
     <div className="container pt-5 pb-5">
@@ -55,16 +56,18 @@ const Footer = () => (
                         <hr />
                         <ul className="list-group">
                             <li className="list-group-item border-0 p-1 pl-3">
-                                <a href="/home">Home</a>
+                                <Link to="/home">
+                                    <a href="/home">Home</a>
+                                </Link>
                             </li>
                             <li className="list-group-item border-0 p-1 pl-3">
-                                <a href="/portfolio">Portfolio</a>
+                                <Link to="/portfolio"><a href="/portfolio">Portfolio</a></Link>
                             </li>
                             <li className="list-group-item border-0 p-1 pl-3">
-                                <a href="/minecraft">Plugins</a>
+                                <Link to="/minecraft"><a href="/minecraft">Plugins</a></Link>
                             </li>
                             <li className="list-group-item border-0 p-1 pl-3">
-                                <a href="/contact">Contact</a>
+                                <Link to="/contact"><a href="/contact">Contact</a></Link>
                             </li>
                             <li className="list-group-item border-0 p-1 pl-3">
                                 <a href="#top">

@@ -1,7 +1,5 @@
 import React from 'react'
 
-import $ from 'jquery'
-
 import Project from './Project'
 
 class Projects extends React.Component {
@@ -9,20 +7,20 @@ class Projects extends React.Component {
     constructor(props) {
         super(props)
 
-        this._PROXY_URL = "https://cors-anywhere.herokuapp.com/";
-        this._PROJECTS_URL = "/get/projects"
+        this._PROJECTS_URL = "https://servetron.xyz/get/projects"
         this.state = {
             projects: []
         }
     }
 
     componentDidMount() {
-        $.ajax({
-            url: this._PROJECTS_URL,
-            context: document.body
-        }).done(data => {
-            console.log(data)
+        fetch(this._PROJECTS_URL)
+        .then(results => results.json())
+        .then(data => {
             this.setState({projects: data})
+        })
+        .catch(err => {
+            console.log("Unable to fetch project data: " + err)
         })
     }
 
@@ -45,7 +43,7 @@ class Projects extends React.Component {
                     <div className="row">
                         <div className="col">
                             <div className="card-columns">
-                                {this.state.projects.length != 0 ? this.state.projects.forEach(this.insertProject) : ""}
+                                {this.state.projects.map(this.insertProject)}
                             </div>
                         </div>
                     </div>

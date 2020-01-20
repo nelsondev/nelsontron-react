@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
 
-import Socials from '../../components/personal/Socials'
+import Socials from '../components/Socials'
 
 class Contact extends React.Component {
 
@@ -23,17 +23,17 @@ class Contact extends React.Component {
                                 <div className="row pt-5 pb-5">
                                     <div className="col-sm-7 m-auto">
                                         <h3>Send me a message —</h3>
-                                        <form action="/post/contact" method="POST">
+                                        <form action="https://servetron.xyz/post/contact" method="POST">
                                             <div className="container">
                                                 <div className="row">
                                                     <div className="col">
-                                                        <label for="ContactFirstName">First name:</label>
+                                                        <label htmlFor="ContactFirstName">First name:</label>
                                                         <input type="text" className="form-control" name="ContactFirstName"
                                                             id="contactFirstName" aria-describedby="FirstNameHelp" placeholder="Tim.." />
                                                         <small id="FirstNameHelp" className="form-text text-muted invisible">Like John..</small>
                                                     </div>
                                                     <div className="col">
-                                                        <label for="ContactLastName">Last name:</label>
+                                                        <label htmlFor="ContactLastName">Last name:</label>
                                                         <input type="text" className="form-control" name="ContactLastName"
                                                             id="contactLastName" aria-describedby="LastNameHelp" placeholder="Apple.." />
                                                         <small id="LastNameHelp" className="form-text text-muted invisible">Like Smith..</small>
@@ -41,7 +41,7 @@ class Contact extends React.Component {
                                                 </div>
                                                 <div className="row">
                                                     <div className="col">
-                                                        <label for="ContactEmail">Email:</label>
+                                                        <label htmlFor="ContactEmail">Email:</label>
                                                         <input type="email" className="form-control" name="ContactEmail"
                                                             id="contactEmail" aria-describedby="EmailHelp" placeholder="tim@apple.com.." />
                                                         <small id="EmailHelp" className="form-text text-muted invisible">Like john@outlook.com..</small>
@@ -49,7 +49,7 @@ class Contact extends React.Component {
                                                 </div>
                                                 <div className="row">
                                                     <div className="col">
-                                                        <label for="ContactText">What would you like to say?</label>
+                                                        <label htmlFor="ContactText">What would you like to say?</label>
                                                         <textarea className="form-control" name="ContactText" id="contactText" rows="3"
                                                             style={{maxHeight: '112px', minHeight: '38px'}}></textarea>
                                                     </div>

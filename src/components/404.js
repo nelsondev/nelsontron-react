@@ -1,8 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Linkedin = () => (
     <div id="linkedin-wrapper">
-        <div className="container pt-3 d-flex" style={{minHeight: '50vh'}}>
+        <div className="container pt-3 d-flex" style={{ minHeight: '50vh' }}>
             <div className="jumbotron-fluid bg-transparent m-auto">
                 <div className="row">
                     <div className="col-md-8 col-lg-5 col-sm-10 d-flex m-auto">
@@ -11,20 +12,28 @@ const Linkedin = () => (
                             <p>404 page not found. Maybe someone gave you the wrong URL.</p>
                             <hr />
                             <p className="lead">
-                                <a className="btn btn-link" href="/"
-                                    role="button">
-                                    Home
+                                <Link to="/">
+                                    <a className="btn btn-link" href="/"
+                                        role="button">
+                                        Home
                                 </a>
-                                <a className="btn btn-link" href="/portfolio"
-                                    role="button">
-                                    Portfolio
+                                </Link>
+                                <Link to="/portfolio">
+                                    <a className="btn btn-link" href="/portfolio"
+                                        role="button">
+                                        Portfolio
                                 </a>
-                                <a href="/minecraft" className="btn btn-link" role="button">
-                                    Plugins
+                                </Link>
+                                <Link to="/minecraft">
+                                    <a href="/minecraft" className="btn btn-link" role="button">
+                                        Plugins
                                 </a>
-                                <a href="/Contact" className="btn btn-link" role="button">
-                                    Contact
-                                </a> — <br/>
+                                </Link>
+                                <Link to="/contact">
+                                    <a href="/contact" className="btn btn-link" role="button">
+                                        Contact
+                                </a>
+                                </Link> — <br />
                                 <a href="https://www.linkedin.com/in/nelsontron/" className="btn btn-link" role="button">
                                     Linkedin
                                 </a>
