@@ -41,7 +41,7 @@ class Home extends React.Component {
                     <Tech />
                     <Github />
                     <Dla />
-                    <Testimonials />
+                    {/* <Testimonials /> */}
                     <ContactCall />
                     <Socials bgcolor="bg-light" />
                 </main>
